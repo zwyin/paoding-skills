@@ -1,0 +1,28 @@
+{
+  "name": "paoding-skills",
+  "description": "Claude Code skill 合集——庖丁解牛，化复杂为轻松",
+  "version": "0.8.0",
+  "owner": {
+    "name": "zwyin"
+  },
+  "plugins": [
+    {
+      "name": "paoding-skills",
+      "description": "Claude Code skill 合集——庖丁解牛，化复杂为轻松",
+      "source": "./",
+      "category": "productivity",
+      "tags": [
+        "claude-code",
+        "skills",
+        "productivity",
+        "github",
+        "publishing",
+        "walkthrough"
+      ],
+      "skills": [
+        "./skills/paoding-github-safe-publish/skills/paoding-github-safe-publish",
+        "./skills/paoding-project-walkthrough/skills/paoding-project-walkthrough"
+      ]
+    }
+  ]
+}

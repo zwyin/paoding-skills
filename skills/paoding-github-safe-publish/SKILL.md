@@ -1,0 +1,1 @@
+skills/paoding-github-safe-publish/SKILL.md

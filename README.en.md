@@ -1,0 +1,156 @@
+# paoding-skills
+
+[![license](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![platform](https://img.shields.io/badge/platform-Claude%20Code-purple)](https://claude.ai/code)
+
+Claude Code skills that simplify complex tasks — one command to rule them all.
+
+[中文](README.md)
+
+> **Ruyi** (如意): a Chinese cultural symbol meaning "as you wish." Every skill in this collection turns complex, time-consuming tasks into a single command.
+
+## Install Skills
+
+### Option 1: Via Browse UI
+
+Select **Browse and install plugins** → Select **paoding-skills** → Select **Install now**
+
+### Option 2: Direct Install
+
+```bash
+# 1. Add marketplace
+/plugin marketplace add zwyin/paoding-skills
+
+# 2. Install the plugin
+/plugin install paoding-skills@paoding-skills
+
+# 3. Reload plugins
+/reload-plugins
+```
+
+### Option 3: Ask the Agent
+
+Simply tell the Agent:
+
+```
+Please install Skills from github.com/zwyin/paoding-skills
+```
+
+### Option 4: Quick Install (npx)
+
+```bash
+npx skills add zwyin/paoding-skills
+```
+
+### Option 5: ClawHub (coming soon)
+
+> Not yet published to ClawHub registry. Track progress at [github.com/zwyin/paoding-skills](https://github.com/zwyin/paoding-skills).
+
+```bash
+clawhub install github-safe-publish
+clawhub install project-walkthrough
+```
+
+### Option 6: Manual Install
+
+```bash
+git clone https://github.com/zwyin/paoding-skills.git
+claude --plugin-dir ./paoding-skills
+```
+
+---
+
+## Skills
+
+### github-safe-publish
+
+Safely publish to GitHub — two-layer desensitization scanning (135 rules + AI), auto-fix, backup & rollback, end-to-end workflow.
+
+[![version](https://img.shields.io/badge/version-0.7.0-blue)](skills/github-safe-publish/skills/github-safe-publish/SKILL.md)
+
+**Covers 6 dimensions**: Secrets & Credentials (100 rules), Database Connections (5 rules), PII (8 rules), Internal Infrastructure (6 rules), File Blacklist (12 rules), Git History (4 rules).
+
+```bash
+# Full workflow: scan → fix → publish to GitHub
+/paoding-github-safe-publish
+
+# Core + SEO optimization (description, topics, badges)
+/paoding-github-safe-publish --seo
+
+# Core + CI generation (auto-detect project type, generate .github/workflows/test.yml)
+/paoding-github-safe-publish --ci
+
+# Full: core + SEO + CI
+/paoding-github-safe-publish --seo --ci
+
+# Scan only — output report, no fix, no publish
+/paoding-github-safe-publish --scan-only
+
+# Dry run — scan + fix suggestions, but no actual changes
+/paoding-github-safe-publish --dry-run
+```
+
+| Flag | Description | Mutual Exclusion |
+|------|-------------|------------------|
+| (none) | Core workflow: scan + publish | — |
+| `--seo` | Add SEO optimization (description, topics, badges, README) | Cannot combine with `--scan-only` / `--dry-run` |
+| `--ci` | Add CI generation (auto-detect and generate workflow) | Cannot combine with `--scan-only` / `--dry-run` |
+| `--scan-only` | Scan only, output report | Cannot combine with `--seo` / `--ci` / `--dry-run` |
+| `--dry-run` | Dry run: scan + suggestions, no changes | Cannot combine with `--seo` / `--ci` / `--scan-only` |
+
+---
+
+### project-walkthrough
+
+Project walkthrough generator — multi-depth, multi-audience, multi-language, outputs markdown + interactive HTML.
+
+[![version](https://img.shields.io/badge/version-1.6.1-blue)](skills/project-walkthrough/skills/project-walkthrough/SKILL.md)
+
+```bash
+# Auto-analyze current directory, recommend depth
+/paoding-project-walkthrough
+
+# Specify project path
+/paoding-project-walkthrough /path/to/project
+
+# Quick overview (small projects or first-time review)
+/paoding-project-walkthrough --depth brief
+
+# Deep walkthrough (comprehensive analysis)
+/paoding-project-walkthrough --depth deep
+
+# Full walkthrough (all details, large projects)
+/paoding-project-walkthrough --depth all
+
+# For developer audience
+/paoding-project-walkthrough --audience dev
+
+# Pure English output
+/paoding-project-walkthrough --lang en
+
+# Bilingual output (Chinese + English side by side)
+/paoding-project-walkthrough --lang bilingual
+
+# Skip confirmation, use recommended defaults (automation-friendly)
+/paoding-project-walkthrough --no-confirm
+
+# Combine: deep walkthrough + dev audience + English
+/paoding-project-walkthrough --depth deep --audience dev --lang en
+
+# Print version
+/paoding-project-walkthrough --version
+```
+
+| Flag | Description | Values | Default |
+|------|-------------|--------|---------|
+| `path` | Project path | any directory path | current directory |
+| `--depth` | Walkthrough depth | `brief` / `medium` / `deep` / `all` | auto-recommended |
+| `--audience` | Target audience | `general` / `dev` | `general` |
+| `--lang` | Output language | `zh` / `zh-pure` / `en` / `bilingual` | `zh` |
+| `--no-confirm` | Skip confirmation | (flag, no value) | — |
+| `--version` | Print version | (flag, no value) | — |
+
+---
+
+## License
+
+[MIT](LICENSE)

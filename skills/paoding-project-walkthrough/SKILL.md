@@ -1,0 +1,1 @@
+skills/paoding-project-walkthrough/SKILL.md
