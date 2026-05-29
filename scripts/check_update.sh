@@ -8,10 +8,10 @@
 set -euo pipefail
 
 CACHE_DIR="${HOME}/.cache/skill-update"
-CACHE_FILE="${CACHE_DIR}/github-safe-publish.json"
+CACHE_FILE="${CACHE_DIR}/project-walkthrough.json"
 
 REPO="zwyin/paoding-skills"
-PLUGIN_KEY="paoding-skills"
+PLUGIN_KEY="paoding-skills@paoding-skills"
 CHECK_INTERVAL_HOURS=24
 
 # --- 1. Read local version ---
