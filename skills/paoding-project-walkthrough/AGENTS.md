@@ -31,11 +31,11 @@ Or with options:
 
 | Platform | Install |
 |----------|---------|
-| **Claude Code** | `/plugin marketplace add zwyin/project-walkthrough-skill` |
+| **Claude Code** | `/plugin marketplace add zwyin/paoding-skills-skill` |
 | **Cursor** | Copy `cursor/project-walkthrough.mdc` → `.cursor/rules/` |
 | **Windsurf** | Copy `.windsurf/rules/project-walkthrough.md` → `.windsurf/rules/` |
-| **OpenCode** | Copy `.opencode/skills/project-walkthrough/` → `.opencode/skills/` |
-| **Gemini CLI** | `gemini skills install https://github.com/zwyin/project-walkthrough-skill.git --path skills/paoding-project-walkthrough` |
+| **OpenCode** | Copy `.opencode/skills/paoding-project-walkthrough/` → `.opencode/skills/` |
+| **Gemini CLI** | `gemini skills install https://github.com/zwyin/paoding-skills-skill.git --path skills/paoding-project-walkthrough` |
 
 ## Output
 
@@ -58,4 +58,4 @@ Or with options:
 
 ## Full Documentation
 
-See `skills/project-walkthrough/SKILL.md` for the complete workflow specification.
+See `skills/paoding-project-walkthrough/SKILL.md` for the complete workflow specification.
