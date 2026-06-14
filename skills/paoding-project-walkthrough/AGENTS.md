@@ -31,11 +31,11 @@ Or with options:
 
 | Platform | Install |
 |----------|---------|
-| **Claude Code** | `/plugin marketplace add zwyin/paoding-skills-skill` |
+| **Claude Code** | `/plugin marketplace add zwyin/project-walkthrough-skill` |
 | **Cursor** | Copy `cursor/project-walkthrough.mdc` → `.cursor/rules/` |
 | **Windsurf** | Copy `.windsurf/rules/project-walkthrough.md` → `.windsurf/rules/` |
 | **OpenCode** | Copy `.opencode/skills/paoding-project-walkthrough/` → `.opencode/skills/` |
-| **Gemini CLI** | `gemini skills install https://github.com/zwyin/paoding-skills-skill.git --path skills/paoding-project-walkthrough` |
+| **Gemini CLI** | `gemini skills install https://github.com/zwyin/project-walkthrough-skill.git --path skills/paoding-project-walkthrough` |
 
 ## Output
 
