@@ -30,7 +30,7 @@
 /plugin marketplace add zwyin/paoding-skills
 
 # 2. 安装插件
-/plugin install project-walkthrough@paoding-skills
+/plugin install paoding-skills@paoding-skills
 ```
 
 安装后直接在任意项目中使用 `/paoding-project-walkthrough` 命令。
@@ -48,8 +48,8 @@ claude --plugin-dir ./paoding-skills  # 保留完整目录结构，路径引用�
 
 | 平台 | 安装方式 |
 |------|---------|
-| **Cursor** | 复制 `cursor/project-walkthrough.mdc` 到项目的 `.cursor/rules/` 目录 |
-| **Windsurf** | 复制 `.windsurf/rules/project-walkthrough.md` 到项目的 `.windsurf/rules/` 目录，或全局复制到 `~/.codeium/windsurf/rules/` |
+| **Cursor** | 复制 `cursor/paoding-project-walkthrough.mdc` 到项目的 `.cursor/rules/` 目录 |
+| **Windsurf** | 复制 `.windsurf/rules/paoding-project-walkthrough.md` 到项目的 `.windsurf/rules/` 目录，或全局复制到 `~/.codeium/windsurf/rules/` |
 | **OpenCode** | 复制 `.opencode/skills/paoding-project-walkthrough/` 到项目的 `.opencode/skills/` 目录，或全局复制到 `~/.config/opencode/skills/` |
 | **Gemini CLI** | `gemini skills install https://github.com/zwyin/paoding-skills.git --path skills/paoding-project-walkthrough` |
 

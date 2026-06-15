@@ -32,8 +32,8 @@ Or with options:
 | Platform | Install |
 |----------|---------|
 | **Claude Code** | `/plugin marketplace add zwyin/paoding-skills` |
-| **Cursor** | Copy `cursor/project-walkthrough.mdc` → `.cursor/rules/` |
-| **Windsurf** | Copy `.windsurf/rules/project-walkthrough.md` → `.windsurf/rules/` |
+| **Cursor** | Copy `cursor/paoding-project-walkthrough.mdc` → `.cursor/rules/` |
+| **Windsurf** | Copy `.windsurf/rules/paoding-project-walkthrough.md` → `.windsurf/rules/` |
 | **OpenCode** | Copy `.opencode/skills/paoding-project-walkthrough/` → `.opencode/skills/` |
 | **Gemini CLI** | `gemini skills install https://github.com/zwyin/paoding-skills.git --path skills/paoding-project-walkthrough` |
 
