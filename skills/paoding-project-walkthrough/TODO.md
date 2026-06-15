@@ -2,7 +2,7 @@
 
 ## 待办
 
-- [ ] Marketplace 注册：在 Claude Code 中执行 `/plugin marketplace add zwyin/ruyi-skills`
+- [ ] Marketplace 注册：在 Claude Code 中执行 `/plugin marketplace add zwyin/paoding-skills`
 
 ## 已完成
 
