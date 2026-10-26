@@ -1,7 +1,7 @@
 {
   "name": "paoding-skills",
   "description": "Claude Code skill 合集——庖丁解牛，化复杂为轻松",
-  "version": "0.9.5",
+  "version": "0.10.0",
   "owner": {
     "name": "zwyin"
   },
