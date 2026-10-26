@@ -124,7 +124,7 @@ claude --plugin-dir ./paoding-skills
 
 项目技术走读——多深度、多受众、多语言，输出 markdown + 交互式 HTML。
 
-[![version](https://img.shields.io/badge/version-1.6.1-blue)](skills/paoding-project-walkthrough/skills/paoding-project-walkthrough/SKILL.md)
+[![version](https://img.shields.io/badge/version-1.6.5-blue)](skills/paoding-project-walkthrough/skills/paoding-project-walkthrough/SKILL.md)
 
 ```bash
 # 自动分析当前目录，推荐深度
@@ -169,6 +169,18 @@ claude --plugin-dir ./paoding-skills
 | `--lang` | 输出语言 | `zh` / `zh-pure` / `en` / `bilingual` | `zh` |
 | `--no-confirm` | 跳过确认 | (flag, 无值) | — |
 | `--version` | 打印版本号 | (flag, 无值) | — |
+
+---
+
+### version-check
+
+版本一致性检查器——发版前体检，核对合集里每一处版本号（frontmatter / manifest / Phase 0 banner / badge / CHANGELOG / dist）是否一致。开发维护工具，非面向终端用户的功能 skill。
+
+[![version](https://img.shields.io/badge/version-0.1.1-blue)](skills/paoding-version-check/skills/paoding-version-check/SKILL.md)
+
+```bash
+python3 skills/paoding-version-check/scripts/validate_versions.py --root .
+```
 
 ---
 

@@ -1,0 +1,1 @@
+skills/paoding-version-check/SKILL.md
